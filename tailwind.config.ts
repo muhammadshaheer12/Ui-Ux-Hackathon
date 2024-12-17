@@ -3,18 +3,16 @@ import type { Config } from "tailwindcss";
 const config: Config = {
     darkMode: ["class"],
     content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
   	extend: {
-  		fontFamily: {
-  			sans: [
-  				'Josefin Sans"',
-  				'sans-serif'
-  			]
-  		},
+		fontFamily: {
+			sans: ['var(--font-josefin)', 'sans-serif'], 
+			lato: ['var(--font-lato)', 'sans-serif'],       
+		  },
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
