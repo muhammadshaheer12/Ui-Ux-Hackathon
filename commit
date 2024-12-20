@@ -22,7 +22,7 @@ const Blog = () => {
                   height={15}
                   className="rounded-lg"
                 />
-                <p>John Doe</p>
+                <p>Saber Ali</p>
               </div>
               <div className="flex gap-2">
                 <Image
